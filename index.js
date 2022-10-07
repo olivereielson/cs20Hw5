@@ -12,8 +12,13 @@ function arraySum(array){
 }
 
 
-let p1 = parseInt(prompt("Number1"));
-let p2 = parseInt(prompt("Number2"));
+
+
+//let p1 = parseInt(prompt("Number1"));
+//let p2 = parseInt(prompt("Number2"));
+
+let p1=284;
+let p2=220;
 
 
 let f1 = [];
@@ -42,9 +47,14 @@ let sum2 = arraySum(f2);
 
 
 if (sum2 === p1 && sum1===p2) {
-    document.getElementById("boolVal").innerText = "True";
+    document.getElementById("amicable").innerText = "The numbers: "+p1+" and "+p2+" are amicable";
 }else{
-    document.getElementById("boolVal").innerText = "False";
-
+    document.getElementById("amicable").innerText = "The numbers:  "+p1+" and "+p2+" are not amicable";;
 }
 
+document.getElementById("f1").innerText=f1.toString();
+document.getElementById("f2").innerText=f2.toString();
+document.getElementById("p1").innerText=p1.toString();
+document.getElementById("p2").innerText=p2.toString();
+
+console.log(f2)
