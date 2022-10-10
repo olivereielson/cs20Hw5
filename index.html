@@ -6,52 +6,86 @@
 
     <style>
 
-        body{
+        body {
             font-family: sans-serif;
             background-color: #222222;
         }
 
-        .square{
+        .square {
             background-color: #0181b0;
             border-radius: 25px;
             margin-left: 5%;
             margin-right: 5%;
             margin-top: 7%;
         }
-        h2{
+
+        h2 {
             color: #ffffff;
             padding: 20px;
         }
-        h1{
+
+        h1 {
             color: #ffffff;
             padding: 30px;
         }
 
-        h3{
+        h3 {
             padding: 20px 20px;
             color: white;
             font-size: 100px;
             display: inline;
             text-align: center;
         }
-        .line{
+
+        .line {
             background-color: white;
             height: 1px;
             margin-right: 1%;
             margin-left: 1%;
 
         }
+
         #SPACE {
             display: flex;
             justify-content: space-between;
         }
-        h4{
+
+        h4 {
             color: white;
             font-size: 30px;
         }
-        .center{
+
+        .center {
             text-align: center;
             padding: 20px;
+        }
+
+        form {
+
+            text-align: center;
+            color: white;
+            font-size: 25px;
+
+        }
+
+        input[type=number] {
+            background-color: #222222;
+            border-radius: 25px;
+            border: 2px solid #0181b0;
+            padding: 20px;
+            margin: 2%;
+            color: white;
+            font-size: 20px;
+        }
+
+        input[type=button] {
+            color: #0181b0;
+            padding: 20px 50px;
+            font-weight: bold;
+            border-radius: 20px;
+            border: 2px solid #ffffff;
+
+
         }
 
     </style>
@@ -63,6 +97,13 @@
     Amicable Numbers
 
 </h1>
+
+<form id="form1">
+    Number 1 <input type="number" name="p1">
+    Number 2 <input type="number" name="p2">
+    <input type="button" onclick="run()" value="Submit">
+
+</form>
 <div class="line"></div>
 
 <div class="square">
@@ -72,6 +113,8 @@
             These two numbers are amicable.
         </h2>
     </div>
+
+
     <div class="line"></div>
     <div id="SPACE">
         <div class="center">
@@ -95,17 +138,12 @@
     </div>
 
 
-
-
 </div>
 
 <div>
 
 
-
-
 </div>
-
 
 
 <script src="index.js"></script>
