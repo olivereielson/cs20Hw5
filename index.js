@@ -3,10 +3,10 @@ function isFactor(factor, number) {
     return number % factor === 0;
 }
 
-//this function retruns the sum of a given array.
+//this function returns the sum of a given array.
 function arraySum(array) {
     let sum = 0;
-    array.forEach(function (item, index) {
+    array.forEach(function (item) {
         sum = sum + item;
     });
     return sum;
@@ -16,7 +16,7 @@ function arraySum(array) {
 function run() {
 
     //get data from the form
-    var formData = new FormData(document.querySelector("form"))
+    const formData = new FormData(document.querySelector("form"));
 
     //get two numbers out of form
     let p1 = parseInt(formData.get("p1"));
